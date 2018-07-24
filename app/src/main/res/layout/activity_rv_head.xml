@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.asus.waibao_test1.scrollview.StickHeadScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="OTHER LAYOUT"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_head"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="HEAD VIEW"
+                    android:background="#4990e2"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.example.asus.waibao_test1.scrollview.StickHeadScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
